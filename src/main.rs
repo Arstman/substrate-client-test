@@ -1,5 +1,9 @@
 use sp_keyring::AccountKeyring;
 use substrate_api_client::{rpc::WsRpcClient, Api};
+mod cli;
+
+use cli::*;
+
 fn main() {
     let url_remote = "wss://khala.api.onfinality.io/public-ws";
     let url_local_chao = "ws://192.168.7.10:9944";
